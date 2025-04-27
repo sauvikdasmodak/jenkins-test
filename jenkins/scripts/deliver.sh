@@ -8,7 +8,7 @@ set -x
 mvn jar:jar install:install help:evaluate -Dexpression=project.name
 set +x
 set -x
-mvn jar:jar install:install help:evaluate -Dexpression=project.version
+mvn jar:jar install:install help:evaluate -Dexpression="project.version"
 set +x
 
 echo 'The following command extracts the value of the <name/> element'
